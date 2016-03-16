@@ -12,6 +12,10 @@ img {
 
 }
 
+h4 {
+	font-family: 'helvetica neue medium';
+}
+
 /*pusudeo elements*/
 
 *, *:after, *:before {
@@ -38,7 +42,7 @@ img {
 
 .grid-pad {
 	padding: 20px 0 20px 0;
-	margin: 50px;
+	margin: 0 50px 0 50px;
 }
 
 
@@ -59,7 +63,7 @@ here we took the padding off so it runs to the edge of the page */
 .module	{
 	background-color: #fff;
 	padding: 10px;
-	margin: 10px;
+	
 }
 
 /*columns */
@@ -101,6 +105,13 @@ here we took the padding off so it runs to the edge of the page */
 	width: 100%;
 }
 
+.col-full p{
+	font-family: 'Exo 2', sans-serif;;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 100;
+}
+
 .border-sides {
 	border-left: 1px dashed;
 	border-right: 1px dashed;
@@ -121,6 +132,7 @@ here we took the padding off so it runs to the edge of the page */
 	font-style: italic;
   }
 .features {
+	font-family: 'libre baskerville', serif; 
 	font-style: italic;
 	text-align: left;
 }
@@ -130,33 +142,77 @@ here we took the padding off so it runs to the edge of the page */
 }
 /*header lines*/
 
-.line {
+header h3 {
+	font-family: 
+}
+
+header {
 	  text-align: center;
-      overflow: hidden;
-      line-height: 2em;
+	  overflow: hidden;
+   	}
 
-	}
+header h1  {
+	border-top 1px solid black;
+	margin: 5px 0;
+	font-family: 'miller display roman';
+	font-weight: light;
+	text-transform: uppercase;
+	font-size: 40px;
 
-.line span {
+}
+
+header h1 span {
 	display: inline-block;
 	position: relative;
 }
 
-.line span:before,
-.line span:after {
+header h1 span:before, header h1 span:after {
   content: "";
   position: absolute;
-  height: 5px;
-  border-top: 1px solid;
-  top: 50%;
-  width: 100%;
+  display: block;
+  border-top: 10px solid;
+  top: 35%;
+  width: 9969px;
 }
 
-.line span:before {
-  right: 100%;
-  margin-right: 15px;
+header h1 span:before {
+	right: 100%;
+	margin-right: 10px;
 }
-.line span:after {
-  left: 100%;
-  margin-left: 15px;
+
+header h1 span:after {
+	left: 100%;
+	margin-left: 10px;
 }
+/*features lines*/
+.features {
+	text-align: left;
+	overflow: hidden;
+  	border-top 1px solid black;
+	margin: 5px 0;
+}
+
+.features span {
+	display: inline-block;
+	position: relative;
+}
+.features span:after {
+	left: 100%;
+	margin-left: 10px;
+	content: "";
+    position: absolute;
+    display: block;
+    border-top: 1px solid;
+    top: 10px;
+    width: 9969px;
+}
+
+
+
+/*font and color stylings*/
+.module h4:first-child {
+	color: red;
+	font-weight: 100;
+}
+
+
