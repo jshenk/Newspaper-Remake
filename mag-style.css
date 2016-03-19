@@ -47,23 +47,25 @@ h4 {
 
 
 
-/*last-of-type
-tags the last column in the list and changes the style, 
-here we took the padding off so it runs to the edge of the page */
-[class*='col-']:last-of-type {
-	padding-right: 0;
-	padding-left: 10px;
-}
+
 
 [class*='col-'] {
 	float: left;	
-	padding-right: 20px;
+	
 }
 
 .module	{
 	background-color: #fff;
 	padding: 10px;
 	
+}
+
+.module h2 {
+	color: red;
+}
+
+.module h3,h4 {
+	margin: 0;
 }
 
 /*columns */
@@ -105,7 +107,7 @@ here we took the padding off so it runs to the edge of the page */
 	width: 100%;
 }
 
-.col-full p{
+.col-full h3{
 	font-family: 'Exo 2', sans-serif;;
 	text-transform: uppercase;
 	font-size: 40px;
@@ -149,6 +151,7 @@ header h3 {
 header {
 	  text-align: center;
 	  overflow: hidden;
+	  padding: 10px;
    	}
 
 header h1  {
@@ -158,6 +161,7 @@ header h1  {
 	font-weight: light;
 	text-transform: uppercase;
 	font-size: 40px;
+	overflow: hidden;
 
 }
 
